@@ -1,0 +1,17 @@
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: saeed
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
